@@ -1,16 +1,16 @@
 .header
   width: 100%
-  max-width: 1464px
   min-height: 129px
-  margin: 0 auto 105px
+  margin-bottom: 105px
   display: flex
   justify-content: space-between
   align-items: center
   flex-wrap: wrap
-  padding: 0 20px
   //background-color: var(--main-bg-color)
   color: var( --main-text-color)
   border-bottom: 1px solid  rgba(102, 104, 106, 0.32)
+  @include mediaTabletHorizontalDown
+    margin-bottom: 0
 
   .header__logo-block
     display: flex
