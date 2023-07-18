@@ -3,6 +3,8 @@
   <TheHeader/>
     <DynamicMarketResponseBlock/>
     <MarketInfoBlock/>
+    <DefineBlock/>
+    <FeatureList/>
   </div>
 </template>
 
@@ -10,13 +12,17 @@
 import TheHeader from "@/components/TheHeader";
 import DynamicMarketResponseBlock from "@/components/DynamicMarketResponseBlock";
 import MarketInfoBlock from "@/components/MarketInfoBlock";
+import DefineBlock from "@/components/DefineBlock";
+import FeatureList from "@/components/FeatureList";
 
 export default {
   name: 'App',
   components: {
     TheHeader,
     DynamicMarketResponseBlock,
-    MarketInfoBlock
+    MarketInfoBlock,
+    DefineBlock,
+    FeatureList
   }
 }
 </script>
@@ -40,6 +46,7 @@ export default {
 
 body
   background-color: var(--main-bg-color)
+  overflow-x: hidden
 
 img
   object-fit: contain

@@ -1,0 +1,50 @@
+.feature-list
+  padding: 0 20px
+
+.feature-list_wrapper
+  display: flex
+  flex-direction: column
+  gap: 30px
+  @include mediaDesktopSmallUp
+    flex-direction: row
+
+.feature-list__title
+  max-width: 1088px
+  font-size: 28px
+  font-style: normal
+  font-weight: 600
+  line-height: normal
+  background: var(--headline-grad, linear-gradient(43deg, rgba(255, 255, 255, 0.72) 0%, #FFF 39.77%, rgba(169, 198, 215, 0.64) 100%))
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  margin-bottom: 40px
+  @include mediaDesktopSmallUp
+    font-size: 44px
+    margin-bottom: 117px
+
+.feature-list__card-catalog
+  display: flex
+  flex-direction: column
+  gap: 25px
+
+.feature-list__card
+  padding: 30px
+  display: flex
+  flex-direction: column
+  gap: 25px
+  border-radius: 4px
+  border: 1px solid var(--base-accent-color)
+  width: 100%
+  @include mediaDesktopSmallUp
+    width: 475px
+    padding: 60px
+
+.feature-list__catalog-item
+  color: var(--base-accent-color)
+  font-size: 16px
+  font-style: normal
+  font-weight: 400
+  line-height: normal
+  display: flex
+  align-items: center
+  gap: 10px
