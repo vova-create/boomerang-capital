@@ -1,26 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+  <TheHeader/>
+    <DynamicMarketResponseBlock/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TheHeader from "@/components/TheHeader";
+import DynamicMarketResponseBlock from "@/components/DynamicMarketResponseBlock";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TheHeader,
+    DynamicMarketResponseBlock,
   }
 }
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="sass">
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap')
+*
+  box-sizing: border-box
+
+#app
+  background-color: var(--main-bg-color)
+  min-height: 100vh
+  color: var(--main-text-color)
+body
+  margin: 0
+  font-family: Poppins, sans-serif
+
+img
+  object-fit: contain
 </style>

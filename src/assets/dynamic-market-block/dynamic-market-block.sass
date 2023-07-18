@@ -1,0 +1,73 @@
+.dynamic-market-block
+  display: flex
+  flex-direction: column
+  gap: 15px
+  margin-left: 245px
+  max-width: 580px
+  width: 100%
+  height: 315px
+  position: relative
+  border: 1px solid red
+
+.dynamic-market-block__above-title-text
+  color: var(--base-accent-color)
+
+.dynamic-market-block__title
+  font-size: 56px
+  font-style: normal
+  font-weight: 600
+  line-height: normal
+  background: var(--headline-grad, linear-gradient(43deg, rgba(255, 255, 255, 0.72) 0%, #FFF 39.77%, rgba(169, 198, 215, 0.64) 100%))
+  //background-clip: text
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
+.dynamic-market-block__buttons
+  display: flex
+  gap: 30px
+  margin-top: 12px
+  flex-wrap: wrap
+
+
+.dynamic-market-block__open-btn
+  display: inline-flex
+  padding: 24px 64px
+  justify-content: center
+  align-items: center
+  border-radius: 4px
+  background: var(--base-accent-color, radial-gradient(66.33% 66.10% at 50.00% 17.80%, #29C5F6 0%, #1C8ADE 100%), #29C5F6)
+  box-shadow: 0 3px 0 0 #004E86
+
+.dynamic-market-block__white-paper-btn
+  display: flex
+  height: 72px
+  padding: 24px 64px
+  justify-content: center
+  align-items: center
+  gap: 10px
+  border-radius: 4px
+  background: linear-gradient(214deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.00) 97.69%)
+  box-shadow: 0 0  8px 0 rgba(255, 255, 255, 0.05) inset
+
+.dynamic-market-block__discord-btn
+  display: flex
+  height: 72px
+  padding: 24px 16px
+  justify-content: center
+  align-items: center
+  gap: 10px
+  border-radius: 4px
+  background: linear-gradient(214deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.00) 97.69%)
+  box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.05) inset
+
+.dynamic-market-block__boomerang-main
+  position: absolute
+  width: 785px
+  height: 980px
+  top: 0
+  right: 0
+  @include mediaDesktopMediumUp
+    width: 1185px
+    height: 1480px
+    top: -120px
+    right: 180px

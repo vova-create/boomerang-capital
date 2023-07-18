@@ -1,0 +1,88 @@
+.header
+  width: 100%
+  max-width: 1464px
+  min-height: 129px
+  margin: 0 auto 105px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+  padding: 0 20px
+  //background-color: var(--main-bg-color)
+  color: var( --main-text-color)
+  border-bottom: 1px solid  rgba(102, 104, 106, 0.32)
+
+  .header__logo-block
+    display: flex
+    align-items: center
+    gap: 15px
+
+    .header__logo
+      height: 37px
+      width: 158
+      @include mediaMobileLargeUp
+        height: 55px
+        width: 230px
+
+  .header__wrapper-logo-text
+    //border: 1px solid green
+
+  .header__logo-name
+    text-transform: uppercase
+    color: var(--base-accent-color)
+    font-size: 27px
+    letter-spacing: 2px
+    font-weight: lighter
+    line-height: 1
+
+  .header__logo-sub-name
+    text-transform: uppercase
+    color: var( --main-text-color)
+    font-size: 15px
+    letter-spacing: 4px
+    font-weight: lighter
+
+  .header__links-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    gap: 28px
+    @include  mediaTabletHorizontalDown
+      gap: 20px
+
+    .header__links
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      align-items: center
+      gap: 28px
+      @include  mediaTabletHorizontalDown
+        display: none
+
+.header__links-social
+  display: flex
+  gap: 5px
+  @include mediaDesktopSmallDown
+    display: none
+
+.header__links-social-items
+  display: flex
+  justify-content: center
+  align-items: center
+  //border: 1px solid red
+  background-color: rgba(0,0,0,0.25)
+  height: 38px
+  width: 38px
+  border-radius: 4px
+
+
+.header__burger-menu
+  display: none
+  @include mediaTabletHorizontalDown
+    display: block
+
+
+
+
+
+
